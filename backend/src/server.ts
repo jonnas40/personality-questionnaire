@@ -1,12 +1,12 @@
 import express, { Express } from 'express';
-import { getLog } from './service';
+import { getQuestions } from './service';
 
 export const app: Express = express();
 app.use(express.json())
 const PORT = 8080;
   
-app.get('/', (req, res) => {
-    res.send(getLog());
+app.get('/questions', (req, res) => {
+    res.send(getQuestions());
 });
   
 app.listen(PORT, () => {
