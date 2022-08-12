@@ -1,7 +1,6 @@
 {
-  "name": "backend",
+  "name": "@personality-questionnaire/backend",
   "version": "1.0.0",
-  "description": "",
   "main": "src/server.ts",
   "scripts": {
     "dev": "ts-node-dev --exit-child src/server.ts",
