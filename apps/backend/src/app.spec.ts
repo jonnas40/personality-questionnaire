@@ -1,6 +1,6 @@
+import { QUESTIONS } from '@personality-questionnaire/data';
 import request from 'supertest';
 import { app } from './app';
-import { QUESTIONS } from './data/question.data';
 
 describe("Testing the endpoints", () => {
 

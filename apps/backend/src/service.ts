@@ -1,5 +1,5 @@
-import { QUESTIONS } from './data/question.data';
-import { Question } from './interface/question.inteface';
+import { QUESTIONS } from '@personality-questionnaire/data';
+import { Question } from '@personality-questionnaire/interfaces';
 
 export function getQuestions(): Question[] {
     return QUESTIONS;

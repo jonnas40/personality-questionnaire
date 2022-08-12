@@ -1,16 +1,16 @@
 /* eslint-disable */
 export default {
-  displayName: 'backend',
+  displayName: 'data',
   preset: '../../jest.preset.js',
-  clearMocks: true,
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
     }
   },
+  testEnvironment: 'node',
   transform: {
-    '^.+\\.[tj]s$': 'ts-jest'
+    '^.+\\.[tj]sx?$': 'ts-jest'
   },
-  moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/packages/backend'
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  coverageDirectory: '../../coverage/libs/data'
 };
