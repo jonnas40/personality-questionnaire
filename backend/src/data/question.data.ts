@@ -1,4 +1,4 @@
-import { Question } from "../models/question";
+import { Question } from "../interface/question.inteface";
 
 export const QUESTIONS: Question[] = [{
     prompt: "You're having an animated discussion with a colleague regarding a project that you're in charge of. You:",

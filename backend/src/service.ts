@@ -1,5 +1,5 @@
 import { QUESTIONS } from './data/question.data';
-import { Question } from './models/question';
+import { Question } from './interface/question.inteface';
 
 export function getQuestions(): Question[] {
     return QUESTIONS;
