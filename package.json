@@ -4,6 +4,9 @@
   "workspaces": [
     "apps/*"
   ],
+  "scripts": {
+    "launch": "nx run-many --target=serve --projects=backend,frontend --parallel=true"
+  },
   "devDependencies": {
     "@nrwl/cypress": "14.5.4",
     "@nrwl/eslint-plugin-nx": "14.5.4",
