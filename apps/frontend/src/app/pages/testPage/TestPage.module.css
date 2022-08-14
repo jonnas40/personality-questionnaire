@@ -6,4 +6,6 @@
     margin: auto;
     height: 100%;
     gap: 48px;
+    background: rgb(76,57,88);
+    background: linear-gradient(160deg, rgba(76,57,88,1) 0%, rgba(118,29,253,1) 50%, rgba(206,69,252,1) 100%);
 }

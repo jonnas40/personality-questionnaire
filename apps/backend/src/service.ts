@@ -8,7 +8,6 @@ export function getQuestions(): Question[] {
 export function evaluateResult(answers: number[]): Result {
     const finalScore = answers.reduce((previous, current) => previous += current, 0); 
     return {
-        finalScore,
         result: finalScore > 0 ? 'extrovert' : 'introvert'
     };
 }

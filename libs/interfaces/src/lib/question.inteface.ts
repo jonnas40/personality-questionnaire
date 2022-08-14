@@ -9,6 +9,5 @@ interface Answer {
 }
 
 export interface Result {
-    finalScore: number,
     result: string
 }

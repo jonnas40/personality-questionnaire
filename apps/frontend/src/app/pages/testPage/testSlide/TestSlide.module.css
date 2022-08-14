@@ -1,18 +1,47 @@
 .slide {
-    background-color: lightgrey;
-    border-radius: 8px;
-    border: solid 1px black;
-    width: 1000px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
-.promptContainer {
-    padding: 20px;
-    border-bottom: solid 1px black;
+.slideHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
 }
 
 .answersContainer {
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nextButton {
+    margin-left: auto;
+}
+
+.submitButton {
+    border-color: var(--success-green);
+    color: var(--success-green);
+    font-weight: bold;
+}
+.submitButton:hover {
+    box-shadow: 0px 0px 16px 8px rgba(76,236,76, 0.75);
+}
+
+.submitButton:disabled {
+    opacity: 50%;
+}
+
+.selectedAnswer {
+    box-shadow: 0px 0px 16px 8px var(--white-glow);
+    background-color: var(--white-selected-glow);
 }
