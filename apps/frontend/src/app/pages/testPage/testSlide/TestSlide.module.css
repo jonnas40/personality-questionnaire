@@ -1,0 +1,18 @@
+.slide {
+    background-color: lightgrey;
+    border-radius: 8px;
+    border: solid 1px black;
+    width: 1000px;
+}
+
+.promptContainer {
+    padding: 20px;
+    border-bottom: solid 1px black;
+}
+
+.answersContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
