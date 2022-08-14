@@ -6,6 +6,8 @@
     margin: auto;
     height: 100%;
     gap: 48px;
+    background-image: url('../../../assets/home-backgroung.jpg');
+    background-size: cover;
 }
 
 .playButton {

@@ -1,16 +1,19 @@
 import express, { Express } from 'express';
 import { evaluateResult, getQuestions } from './service';
+import cors from 'cors';
 
 export const app: Express = express();
 app.use(express.json())
+app.use(cors({
+    origin: 'http://localhost:4200',
+    credentials: true
+}))
   
 app.get('/questions', (req, res) => {
-    res.set('Access-Control-Allow-Origin', 'http://localhost:4200');
     res.send(getQuestions());
 });
 
 app.post('/result', (req, res) => {
-    res.set('Access-Control-Allow-Origin', 'http://localhost:4200/');
-    res.send(evaluateResult(req.body.answers));
+    res.send(evaluateResult(req.body));
 });
   

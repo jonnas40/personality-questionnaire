@@ -11,7 +11,6 @@ export async function fetchQuestions(): Promise<Question[]> {
   export async function postResults(answers: number[]): Promise<Result> {
     const myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');
-    myHeaders.append('Access-Control-Allow-Origin', '*');
     const request = {
       method: 'POST',
       body: JSON.stringify(answers),

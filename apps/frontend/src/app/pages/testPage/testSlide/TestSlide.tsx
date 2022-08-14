@@ -1,5 +1,6 @@
-import { Question } from '@personality-questionnaire/interfaces';
+import { Question, Result } from '@personality-questionnaire/interfaces';
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { postResults } from '../../../services/apiFetch.service';
 import styles from './TestSlide.module.css';
 
@@ -12,7 +13,8 @@ function TestSlide({ question }: Props) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState<number[]>([]);
     const [selected, setSelected] = useState<number>(0);
-    
+    const navigate = useNavigate();
+
     function handleNextQuestion() {
         setScore((currentScore) => [...currentScore, selected]);
         setSelected(0);
@@ -28,6 +30,10 @@ function TestSlide({ question }: Props) {
     function handleSubmit() {
         setScore((currentScore) => [...currentScore, selected]);
         console.log(score);
+        postResults(score)
+            .then((result) => {
+                navigate('/result', { state: result as Result })
+            })
         console.log(postResults(score));
     }    
 
