@@ -1,4 +1,4 @@
-import { act, render, screen, waitFor } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { fetchQuestions } from '../../services/apiFetch.service';
 import { mockQuestion, mockResult } from '../../mocks/testMocks'

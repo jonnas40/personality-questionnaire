@@ -34,7 +34,7 @@
     font-weight: bold;
 }
 .submitButton:hover {
-    box-shadow: 0px 0px 16px 8px rgba(76,236,76, 0.75);
+    box-shadow: 0px 0px 16px 8px var(--green-glow);
 }
 
 .submitButton:disabled {
