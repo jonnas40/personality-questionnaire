@@ -15,7 +15,7 @@ function TestPage() {
     if (Array.isArray(questions)) {
         return (
             <div className={styles['container']}>
-                <TestSlide question={questions}></TestSlide>
+                <TestSlide questions={questions}></TestSlide>
             </div>
           )      
     }

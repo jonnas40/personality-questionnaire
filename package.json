@@ -8,7 +8,6 @@
     "launch": "nx run-many --target=serve --projects=backend,frontend --parallel=true"
   },
   "devDependencies": {
-    "@nrwl/cypress": "14.5.4",
     "@nrwl/eslint-plugin-nx": "14.5.4",
     "@nrwl/express": "latest",
     "@nrwl/jest": "14.5.4",
@@ -30,7 +29,6 @@
     "@typescript-eslint/parser": "^5.29.0",
     "babel-jest": "27.5.1",
     "cors": "^2.8.5",
-    "cypress": "^10.2.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",

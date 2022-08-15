@@ -15,11 +15,9 @@ describe("Testing the endpoints", () => {
     });
 
     it("It should post the answers and get the results", done => {
-      const requestBody = {
-        answers: [1,2,3,4]
-      };
+      const requestBody = [1,2,3,4];
       const expectedResponse = {
-        result: 10
+        result: 'extrovert'
       }
       
       request(app)
